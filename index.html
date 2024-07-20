@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <title>JavaScript Exam Project</title>
+  </head>
+  <body>
+    <!-- Side menu section -->
+    <div class="side-nav position-fixed start-0">
+      <div
+        class="menu-bar text-white d-flex flex-column justify-content-between p-4"
+      >
+        <div class="links">
+          <ul>
+            <li id="playing">Now playing</li>
+            <li id="popular">Popular</li>
+            <li id="top">Top Rated</li>
+            <li id="trending">Trending</li>
+            <li id="upcoming">Upcoming</li>
+            <li id="contact">Contact Us</li>
+          </ul>
+        </div>
+        <div class="menu-bottom">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter mx-3"></i>
+            <i class="fa-solid fa-globe" style="color: #ffffff"></i>
+          </div>
+          <div class="copyright">
+            <p class="pt-3 text-white-50 fw-lighter">
+              Copyright © 2022 All Rights Reserved. <br />Created by
+              <a
+                href="https://github.com/Develekko"
+                class="link-danger"
+                target="_blank"
+                style="text-decoration: none"
+                >Housam Ramadan</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="aside-navbar d-flex justify-content-between flex-column align-items-center bg-white"
+      >
+        <img src="./logo.png" class="w-75 logo" alt="logo-image" />
+        <i class="menu-icon fa-solid fa-bars fs-2"></i>
+        <i class="close fa-solid fa-xmark fs-2 d-none"></i>
+        <div class="d-flex flex-column">
+          <i class="fa-solid fa-globe pb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container p-5 text-center">
+        <input
+          id="search"
+          type="text"
+          name="search"
+          placeholder="search"
+          class="search rounded-pill w-50 py-2 px-4 bg-transparent"
+        />
+
+        <!-- movies display row content -->
+        <div id="displayRow" class="displayRow row gx-5 gy-4 my-5"></div>
+      </div>
+    </main>
+
+    <!-- contact form section -->
+    <footer id="contactUs" class="mb-4">
+      <div class="container">
+        <h2 class="text-white pb-3 fw-lighter">Contact Us</h2>
+        <form id="contactUS" class="row align-items-center m-auto">
+          <div class="col-md-6 pb-3">
+            <input
+              id="userName"
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Name"
+            />
+            <span class="error d-none text-danger" id="nameError"
+              >Enter a valid name.</span
+            >
+          </div>
+          <div class="col-md-6 pb-3">
+            <input
+              id="userEmail"
+              type="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+            />
+            <span class="error d-none text-danger" id="emailError"
+              >Enter a valid Email</span
+            >
+          </div>
+          <div class="col-md-6 pb-3">
+            <input
+              id="userPhone"
+              type="number"
+              class="form-control"
+              placeholder="Enter Your Phone"
+            />
+            <span class="error d-none text-danger" id="phoneError"
+              >Enter a valid phone number</span
+            >
+          </div>
+          <div class="col-md-6 pb-3">
+            <input
+              id="userAge"
+              type="number"
+              class="form-control"
+              placeholder="Enter Your Age"
+            />
+            <span class="error d-none text-danger" id="ageError"
+              >Enter a valid age [18 - 99]</span
+            >
+          </div>
+          <div class="col-md-6 pb-3">
+            <input
+              id="userPassword"
+              type="password"
+              class="form-control"
+              placeholder="Enter Your password"
+            />
+            <span class="error d-none text-danger" id="passwordError"
+              >Enter a valid password [atleast one capital letter and a
+              numbers]</span
+            >
+          </div>
+          <div class="col-md-6 pb-3">
+            <input
+              id="userRePassword"
+              type="password"
+              class="form-control"
+              placeholder="Re-enter Your Password"
+            />
+            <span class="error d-none text-danger" id="confirmPasswordError"
+              >Password does not match</span
+            >
+          </div>
+
+          <div class="row">
+            <button id="submitBtn" type="submit" class="btn submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

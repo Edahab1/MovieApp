@@ -1,0 +1,143 @@
+:root {
+  --menubar-width: 255px; /* max width = 255px */
+}
+
+html{
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  background-color: black;
+}
+
+/* side nav menu section */
+.side-nav {
+  z-index: 999;
+}
+
+.aside-navbar {
+  background-color: white;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  transition: all 0.4s ease;
+}
+
+.aside-navbar i,
+.icons i {
+  cursor: pointer;
+}
+
+
+.menu-bar {
+  background-color: black;
+  width: 255px;
+  position: relative;
+  min-height: 100vh;
+  height: inherit;
+  transition: all 0.4s ease;
+}
+
+.menu-bar .links ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.menu-bar .links ul li {
+  margin-bottom: 20px;
+  margin-left: -30px;
+  position: relative;
+  bottom: 150px;
+  cursor: pointer;
+}
+
+/* main section */
+main .search {
+  caret-color: white;
+  color: white;
+  box-shadow: 0px -1px 0px white;
+  border-color: white;
+}
+
+.overlay .details .vote {
+  width: fit-content;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+}
+.cardImage{
+  transition: all .6s;
+}
+
+.movieCard:hover .cardImage{
+  rotate: 10deg;
+  scale: 1.15;
+  filter: blur(5px);
+}
+
+.form-control{
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.667);
+  border-radius: unset;
+  width: 100%;
+  caret-color: white;
+  color: white;
+}
+.form-control::placeholder{
+  color: rgba(255, 255, 255, 0.589);
+  text-align: center;
+}
+
+.form-control:focus{
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+}
+
+footer form .submit{
+  background-color: black;
+  color: white;
+  width: 10%;
+  font-weight: lighter;
+  margin-left: 10px;
+  box-shadow: 0 0 .5px white;
+  transition: all .3s ease-in-out;
+}
+
+footer form .submit:hover{
+  background-color: white;
+  color: black;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0 60px black inset!important;
+}
